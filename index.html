@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Matcher</title>
+    <!-- tailWind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-indigo-950">
+    <main class="lg:mx-auto mx-5 mt-16 my-5  grid lg:grid-cols-2 gap-10">
+        <section class="bg-indigo-900 px-7 py-10">
+            <div class=" mx-auto px-3">
+                <input id="generate-field" type="text" class="p-2 w-full rounded-lg bg-blue-400">
+            </div>
+            <div class="bg-blue-800 mx-auto my-24 w-36 h-36 rounded-full grid place-items-center">
+                <div class="bg-blue-600 w-32 h-32 rounded-full grid place-items-center ">
+                    <p id="generate-pin" class="text-white text-2xl text-center ">Generate pin</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-indigo-900 px-7 py-10">
+            <div class=" mx-auto px-3">
+                <input id="pin-field" type="text" class="p-2 w-full rounded-lg bg-blue-400">
+            </div>
+         <div id="numbers" class="mx-auto mt-8 px-7 grid">
+            <div  class="text-white gap-3 text-2xl grid grid-cols-3 ">
+                
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">9</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">8</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">7</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">6</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">5</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">4</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">3</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">2</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">1</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3"> < </p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">0</p>
+                <p class="bg-gray-600 px-3 rounded-lg text-center py-3">C</p>
+            </div>
+            <button id="verify-btn" class="text-xl text-white bg-blue-600 py-1 rounded-lg mt-8">Submit</button>
+        </div>
+        </section>
+    </main>
+    <footer class="mb-24">
+        <div class="text-center mt-7">
+            <button  id="btn-01"  class="text-lg text-white   mx-auto rounded-lg justify-center  bg-indigo-900 px-5  text-center show-btn">❌ Pin didn't match.. Please try again.</button>
+        </div>
+        <div  class="text-center mt-4">
+            <button id="btn-02" class="text-lg text-white   mx-auto rounded-lg justify-center  bg-indigo-900 px-5  text-center show-btn">✅ Pin Matched.. Logging to the app.</button>
+        </div>
+    </footer>
+    <script src="js fiels/match-pin.js"></script>
+</body>
+
+</html>
